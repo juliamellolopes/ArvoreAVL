@@ -1,26 +1,31 @@
-#include "avl.h"
+#include "arquivos.h"
+
 
 int main(){
-	int reg[] = {6,4,5,8,7};
-	Tree *raiz = CreateTree();
-	Record r;
+	int opc;
 
-	for(int i=0; i<5; i++){
-		r.key = reg[i];
-		r.value = 1;
-		insertTree(&raiz, r);
-	}
+	do
+	{
+		printf("\n1)Resultados do primeiro conjunto de dados");
+		printf("\n2)Resultados do segundo conjunto de dados");
+		printf("\n3)Sair");
+		scanf("%d",&opc);
 
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	
-	printf("\nRemovendo a chave 5\n");
-	r.key = 5;
-	removeTree(&raiz, &raiz, r);
-	printf("\n");
-
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	printf("\n");
-	
+		switch (opc)
+		{
+		case 1:
+			Conjunto1();
+		break;
+		
+		case 2:
+			Conjunto2();
+		break;
+		
+		default:
+			printf("[ERRO]: Opção Invalida!!");
+			break;
+		}
+	}while (opc != 3);
 	
 	return 0;
 }
