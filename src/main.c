@@ -1,14 +1,14 @@
-#include "arquivos.h"
+#include "slide.h"
 
 
 int main(){
 	int opc;
 
 	do
-	{
+	{	
 		printf("\n1)Resultados do primeiro conjunto de dados");
 		printf("\n2)Resultados do segundo conjunto de dados");
-		printf("\n3)Sair");
+		printf("\n3)Sair\n");
 		scanf("%d",&opc);
 
 		switch (opc)
@@ -20,7 +20,7 @@ int main(){
 		case 2:
 			Conjunto2();
 		break;
-		
+
 		default:
 			printf("[ERRO]: Opção Invalida!!");
 			break;

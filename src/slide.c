@@ -1,4 +1,4 @@
-#include "arquivos.h"
+#include "slide.h"
 
 
 void Conjunto1(){
