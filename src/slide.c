@@ -68,44 +68,5 @@ void Conjunto2(){
     
     printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
 	
-	printf("\nRemovendo a chave 10\n");
-	r.key = 10;
-	removeTree(&raiz, &raiz, r);
-	printf("\n");
-
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	printf("\n");
-
-	printf("\nRemovendo a chave 5\n");
-	r.key = 5;
-	removeTree(&raiz, &raiz, r);
-	printf("\n");
-
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	printf("\n");
-
-	printf("\nRemovendo a chave 4\n");
-	r.key = 4;
-	removeTree(&raiz, &raiz, r);
-	printf("\n");
-
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	printf("\n");
-
-	printf("\nRemovendo a chave 11\n");
-	r.key = 11;
-	removeTree(&raiz, &raiz, r);
-	printf("\n");
-
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	printf("\n");
-
-	printf("\nRemovendo a chave 6\n");
-	r.key = 6;
-	removeTree(&raiz, &raiz, r);
-	printf("\n");
-
-	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
-	printf("\n");
 
 }
