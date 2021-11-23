@@ -14,4 +14,4 @@ Criando uma arvore com o primeiro conjunto de dados e retirando os valores pedid
 
 ![image](https://user-images.githubusercontent.com/84408875/143036940-227fded4-9034-406e-9b2e-9c16941f761a.png)
 
-Em seguida podera ver o resultado do projeto.
+Escolhendo a opção que deseja podera ver os resultados do projeto.
