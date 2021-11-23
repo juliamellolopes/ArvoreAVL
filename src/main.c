@@ -22,7 +22,6 @@ int main(){
 		break;
 
 		default:
-			printf("[ERRO]: Opção Invalida!!");
 			break;
 		}
 	}while (opc != 3);
