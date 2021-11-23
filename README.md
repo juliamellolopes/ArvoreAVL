@@ -12,6 +12,6 @@ Programação feita em C, na plataforma Visual Studio Code, no Windows 10. Abra 
 
 Criando uma arvore com o primeiro conjunto de dados e retirando os valores pedidos e criando uma outra arvore com o segundo conjunto. Ao inicilizar será possivel ver um menu com tres opções, uma para ter acesso ao conjunto 1, uma para o conjunto 2 e outra para sair do programa como é possive ver a abaixo:
 
-![image](https://user-images.githubusercontent.com/84408875/143035064-ff49a6c0-dfb1-45e3-a43d-41e50adb9eed.png)
+![image](https://user-images.githubusercontent.com/84408875/143036940-227fded4-9034-406e-9b2e-9c16941f761a.png)
 
 Em seguida podera ver o resultado do projeto.
