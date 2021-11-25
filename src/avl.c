@@ -133,7 +133,7 @@ void removeTree(Tree **t, Tree **f, Record r){
   	*t = (*t)->dir;
   	free(aux);
   	rebalanceTree(f);
-  	rebalanceTree(t); 	
+  	rebalanceTree(t); 		
   	
 }
 
