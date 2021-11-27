@@ -15,3 +15,7 @@ Criando uma arvore com o primeiro conjunto de dados e retirando os valores pedid
 ![image](https://user-images.githubusercontent.com/84408875/143036940-227fded4-9034-406e-9b2e-9c16941f761a.png)
 
 Escolhendo a opção que deseja podera ver os resultados do projeto.
+
+### Reflexão
+
+Analisando a arvore pelo seu balanceamento possui um custo computacional maior que a arvore binária, porem esse novos metodos fazem com que seja mais facil de encontrar, inserir ou remover um dado.
