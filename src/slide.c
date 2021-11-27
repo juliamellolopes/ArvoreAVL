@@ -6,7 +6,7 @@ void Conjunto1(){
 	Tree *raiz = CreateTree();
 	Record r;
 
-	for(int i=0; i<13; i++){
+	for(int i = 0; i < 13; i++){
 		r.key = reg[i];
 		r.value = 1;
 		insertTree(&raiz, r);
@@ -53,6 +53,10 @@ void Conjunto1(){
 
 	printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
 	printf("\n");
+
+	printf("METODO PRE ORDEM: { ");
+	preordem(raiz);
+	printf("}\n\n");
 }
 
 void Conjunto2(){
@@ -60,7 +64,7 @@ void Conjunto2(){
 	Tree *raiz = CreateTree();
 	Record r;
 
-	for(int i=0; i<11; i++){
+	for(int i = 0; i < 11; i++){
 		r.key = reg[i];
 		r.value = 1;
 		insertTree(&raiz, r);
@@ -68,5 +72,13 @@ void Conjunto2(){
     
     printf("Raiz:%d\tFilho esq:%d\tFilho dir:%d\n",raiz->reg.key, raiz->esq->reg.key,raiz->dir->reg.key);
 	
+	printf("METODO PRE-ORDEM: { ");
+	preordem(raiz);
+  	printf("}\n\n");
+}
 
+void menu(){
+	printf("\n1)Resultados do primeiro conjunto de dados");
+	printf("\n2)Resultados do segundo conjunto de dados");
+	printf("\n3)Sair\n");
 }

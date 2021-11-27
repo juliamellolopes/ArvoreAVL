@@ -96,10 +96,9 @@ void rebalanceTree(Tree **t){
 		rotacaoDuplaDireita(t);
 
 	if(balance == -2 && right <= 0)
-		rotacaoSimplesEsquerda(t);
+		rotacaoDuplaEsquerda(t);
 	if(balance == -2 && right > 0)
-		rotacaoDuplaEsquerda(t); 	
-
+		rotacaoSimplesEsquerda(t);
 }
 
 void removeTree(Tree **t, Tree **f, Record r){
@@ -118,14 +117,13 @@ void removeTree(Tree **t, Tree **f, Record r){
   		*t = (*t)->esq;
     	free(aux);
     	rebalanceTree(f);
-    	rebalanceTree(t);
     	return;
   	}
 
   	if ((*t)->esq != NULL){ 
   		antecessor(&(*t)->esq, *t);
   		rebalanceTree(f);
-  		rebalanceTree(t);
+		rebalanceTree(t);
   		return;
   	}
 
@@ -133,14 +131,14 @@ void removeTree(Tree **t, Tree **f, Record r){
   	*t = (*t)->dir;
   	free(aux);
   	rebalanceTree(f);
-  	rebalanceTree(t); 		
+  	rebalanceTree(t); 	
   	
 }
 
 void preordem(Tree *t)
 {
   if(!(t == NULL)){
-    printf("%d:%d\t", t->reg.key, t->weight);
+    printf("%d ", t->reg.key);
     preordem(t->esq); 
     preordem(t->dir); 
   }
@@ -151,7 +149,7 @@ void central(Tree *t)
 {
   if(!(t == NULL)){
     central(t->esq); 
-    printf("%d\t", t->reg.key);
+    printf("%d ", t->reg.key);
     central(t->dir); 
   }
 }
@@ -161,10 +159,9 @@ void posordem(Tree *t)
   if(!(t == NULL)){
     posordem(t->esq); 
     posordem(t->dir); 
-    printf("%d\t", t->reg.key);
+    printf("%d ", t->reg.key);
   }
 }
-
 
 int getWeight(Tree **t){
 	if(*t == NULL)

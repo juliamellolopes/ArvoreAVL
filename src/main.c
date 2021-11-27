@@ -3,12 +3,10 @@
 
 int main(){
 	int opc;
-
+  	
 	do
 	{	
-		printf("\n1)Resultados do primeiro conjunto de dados");
-		printf("\n2)Resultados do segundo conjunto de dados");
-		printf("\n3)Sair\n");
+		menu();
 		scanf("%d",&opc);
 
 		switch (opc)
